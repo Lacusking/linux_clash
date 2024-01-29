@@ -1,0 +1,12 @@
+[Unit]
+Description=clash
+
+[Service]
+ExecStartPre=/home/wz/vpn/pre_start_serivce.sh
+ExecStart=/home/wz/vpn/start_service.sh
+#ExecStartPost=/home/wz/vpn
+ExecStop=/home/wz/vpn/stop_service.sh
+ExecStopPost=/home/wz/vpn/post_stop_service.sh
+
+[Install]
+WantedBy=multi-user.target
