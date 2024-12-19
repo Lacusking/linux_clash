@@ -1,8 +1,0 @@
-docker run -itd --network=host {image} bash
- 
-
-vim /etc/profile
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=http://127.0.0.1:7890
-#保存然后更新配置
-source /etc/profile
